@@ -60,3 +60,12 @@ add address=173.234.24.6 comment="RAN EXTREME" list=AAGamingOTHERS
 add address=64.110.24.28 comment="RAN EXTREME" list=AAGamingOTHERS
 add address=103.192.176.0/24 list=AAGamingOTHERS comment="BULL SF"
 add address=149.56.12.161 list=AAGamingOTHERS
+add address=112.235.2.0/24 comment="Assault Fire" list=AAGamingOTHERS
+add address=175.175.54.0/24 list=AAGamingOTHERS
+add address=111.161.59.0/24 list=AAGamingOTHERS
+add address=125.39.202.0/24 list=AAGamingOTHERS
+add address=220.249.245.0/24 list=AAGamingOTHERS
+add address=27.211.46.0/24 list=AAGamingOTHERS
+add address=110.245.180.0/24 list=AAGamingOTHERS
+add address=112.228.30.0/24 list=AAGamingOTHERS
+add address=121.52.201.0/24 list=AAGamingOTHERS comment="SF2"
