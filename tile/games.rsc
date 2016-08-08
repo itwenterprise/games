@@ -69,4 +69,5 @@ add address=27.211.46.0/24 list=AAGamingOTHERS
 add address=110.245.180.0/24 list=AAGamingOTHERS
 add address=112.228.30.0/24 list=AAGamingOTHERS
 add address=121.52.201.0/24 list=AAGamingOTHERS comment="SF2"
-add address=64.25.44.0/24 list=AAGamingOTHERS comment=BladeSoul"
+add address=64.25.44.0/24 list=AAGamingOTHERS comment="BladeSoul"
+
