@@ -1,4 +1,4 @@
-#Generated August 7, 2016 @ ITW Enterprise
+#Generated August 8, 2016 @ ITW Enterprise
 #(C)2016 Speclin TerTi, ITW Enterprise Solutions
 
 /ip firewall address-list
@@ -49,6 +49,12 @@ add address=188.165.69.23 comment="Ragnarok ESTLandRO" list=AAGamingOTHERS
 add address=66.150.188.231 comment="Ran Emperor" list=AAGamingOTHERS
 add address=203.116.20.0/24 comment=RANGS list=AAGamingOTHERS
 add address=208.67.49.0/24 comment="TERA ONLINE" list=AAGamingOTHERS
+add address=162.254.192.0/24 list=AAGamingOTHERS
+add address=162.254.193.0/24 list=AAGamingOTHERS
+add address=162.254.199.0/24 list=AAGamingOTHERS
+add address=208.67.48.0/24 list=AAGamingOTHERS
+add address=209.66.124.0/24 list=AAGamingOTHERS
+add address=64.125.154.0/24 list=AAGamingOTHERS
 add address=149.56.143.0/24 comment="RAN PRIVATE" list=AAGamingOTHERS
 add address=173.234.24.6 comment="RAN EXTREME" list=AAGamingOTHERS
 add address=64.110.24.28 comment="RAN EXTREME" list=AAGamingOTHERS
