@@ -74,4 +74,5 @@ add address=69.94.101.0/24 list=AAGamingOTHERS comment="InfinityRAN"
 add address=52.74.142.0/24 list=AAGamingOTHERS comment="FreeStyleSteam"
 add address=174.35.125.0/24 list=AAGamingOTHERS comment="Elsword KOG"
 add address=208.64.201.0/24 list=AAGamingOTHERS comment="FreeStyle 2"
-
+add address=172.106.10.0/24 list=AAGamingOTHERS comment="ZypherMU"
+add address=172.106.112.0/24 list=AAGamingOTHERS comment="GrudgeMU"
