@@ -71,3 +71,4 @@ add address=112.228.30.0/24 list=AAGamingOTHERS
 add address=121.52.201.0/24 list=AAGamingOTHERS comment="SF2"
 add address=64.25.44.0/24 list=AAGamingOTHERS comment="BladeSoul"
 add address=69.94.101.0/24 list=AAGamingOTHERS comment="InfinityRAN"
+add address=52.74.142.0/24 list=AAGamingOTHERS comment="FreeStyleSteam"
