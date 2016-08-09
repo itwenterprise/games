@@ -77,3 +77,5 @@ add address=208.64.201.0/24 list=AAGamingOTHERS comment="FreeStyle 2"
 add address=172.106.10.0/24 list=AAGamingOTHERS comment="ZypherMU"
 add address=172.106.112.0/24 list=AAGamingOTHERS comment="GrudgeMU"
 add address=74.201.99.0/24 list=AAGamingOTHERS comment="World of Tanks"
+add address=178.162.220.0/24 list=AAGamingOTHERS comment="Warface"
+
