@@ -73,3 +73,7 @@ add address=64.25.44.0/24 list=AAGamingOTHERS comment="BladeSoul"
 add address=69.94.101.0/24 list=AAGamingOTHERS comment="InfinityRAN"
 add address=52.74.142.0/24 list=AAGamingOTHERS comment="FreeStyleSteam"
 add address=174.35.125.0/24 list=AAGamingOTHERS comment="Elsword KOG"
+<<<<<<< HEAD
+add address=208.64.201.0/24 list=AAGamingOTHERS comment="FreeStyle 2"
+=======
+>>>>>>> origin/mikrotik
