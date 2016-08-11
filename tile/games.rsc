@@ -80,4 +80,4 @@ add address=74.201.99.0/24 list=AAGamingOTHERS comment="World of Tanks"
 add address=178.162.220.0/24 list=AAGamingOTHERS comment="Warface"
 add address=94.23.6.0/24 list=AAGamingOTHERS comment="RankedGaming"
 add address=125.5.20.0/24 list=AAGamingOTHERS comment="WarRock"
-
+add address=173.0.52.0/24 list=AAGamingOTHERS
