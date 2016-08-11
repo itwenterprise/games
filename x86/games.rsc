@@ -1,4 +1,4 @@
-#Generated August 8, 2016 @ ITW Enterprise
+#Generated August 11, 2016 @ ITW Enterprise
 #(C)2016 Speclin TerTi, ITW Enterprise Solutions
 
 /ip firewall address-list
@@ -81,3 +81,5 @@ add address=178.162.220.0/24 list=AAGamingOTHERS comment="Warface"
 add address=94.23.6.0/24 list=AAGamingOTHERS comment="RankedGaming"
 add address=125.5.20.0/24 list=AAGamingOTHERS comment="WarRock"
 add address=173.0.52.0/24 list=AAGamingOTHERS
+add address=23.238.135.227 list=AAGamingOTHERS
+add address=64.94.101.0/24 list=AAGamingOTHERS
