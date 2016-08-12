@@ -89,3 +89,4 @@ add address=45.34.4.0/24 list=AAGamingOTHERS
 add address=54.193.96.0/24 list=AAGamingOTHERS
 add address=54.193.89.0/24 list=AAGamingOTHERS
 add address=54.206.9.0/24 list=AAGamingOTHERS
+add address=54.193.70.0/24 list=AAGamingOTHERS
