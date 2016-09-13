@@ -95,3 +95,4 @@ add address=199.30.202.0/24 list=AAGamingOTHERS
 add address=203.117.124.0/24 list=AAGamingOTHERS
 add address=45.35.101.0/24 list=AAGamingOTHERS
 add address=151.80.108.153 list=AAGamingOTHERS
+add address=95.211.152.0/24 list=AAGamingOTHERS
