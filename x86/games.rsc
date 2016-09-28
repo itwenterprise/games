@@ -100,3 +100,4 @@ add address=104.238.142.0/24 list=AAGamingOTHERS
 add address=178.162.194.0/24 list=AAGamingOTHERS
 add address=23.106.9.66 list=AAGamingOTHERS
 add address=172.246.104.0/24 list=AAGamingOTHERS
+add address=117.20.40.0/24 list=AAGamingOTHERS
