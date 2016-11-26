@@ -127,3 +127,4 @@ add address=45.121.187.0/24 list=AAGamingDOTA2
 add address=125.5.25.0/24 list=AAGamingLOLPH
 add address=121.52.205.0/24 list=AAGamingOTHERS comment="SF1 PlayPark"
 add address=123.242.200.0/24 list=AAGamingOTHERS comment="Audition PlayPark"
+add address=128.241.92.36 list=AAGamingOTHERS comment="Rose Online"
