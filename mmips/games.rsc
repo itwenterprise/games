@@ -131,3 +131,4 @@ add address=128.241.92.36 list=AAGamingOTHERS comment="Rose Online"
 add address=119.82.162.0/24 list=AAGamingOTHERS comment="Mobile Legends"
 add address=161.202.62.0/24 list=AAGamingOTHERS comment="Mobile Legends"
 add address=125.5.24.0/24 list=AAGamingLOLPH
+add address=51.255.70.0/24 list=AAGamingOTHERS comment="Insanity FlyFF"
