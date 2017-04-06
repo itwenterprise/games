@@ -5,5 +5,5 @@
 :local LOLPORT 5100-5400
 /ip firewall mangle set [find chain="games" protocol="udp" dst-port="5100-5220"] dst-port=$LOLPORT
 :delay 2
-log warning "Update Complete....";
+:log warning "Update Complete....";
 /system logging enable 0
