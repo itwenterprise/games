@@ -6,7 +6,6 @@
 :log warning "Updating League of Legends......";
 :if ([:len [/ip firewall mangle find where dst-port~"5100-5220" and new-connection-mark~"Games_LOLPH"]] > 0) do={
 local LOLPORT 5100-5400;
-:delay 4;
 /ip firewall mangle set [find  protocol="udp" dst-port="5100-5220" new-connection-mark="Games_LOLPH"] dst-port=$LOLPORT;
 :log warning "League of Legends Update Complete....";
 } else={
