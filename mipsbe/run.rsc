@@ -1,7 +1,7 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "April 21, 2017 Revision 15c (HoneyBean)"
+:local scriptversion "4.21.2017 Revision 15c (HoneyBean)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
 :log warning "Updating League of Legends......";
 :if ([:len [/ip firewall mangle find where dst-port~"5100-5220" and new-connection-mark~"Games_LOLPH"]] > 0) do={
