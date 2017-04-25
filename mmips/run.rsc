@@ -13,9 +13,9 @@ local LOLPORT 5100-5400;
 :log warning "League of Legends Game-Port already updated!"
 :delay 2;
 :log warning "Changelog: Added Games (OtherGames) (Revision 16b)"
-:log warning "*BullSF (New IP)*"
-:log warning "*Heroes Evolved (Mobile: Android & iOS) (Angkor Server)*"
-:log warning "*MineCraft Private Server*"
+:log info "BullSF (New IP)"
+:log info "Heroes Evolved (Mobile: Android & iOS) (Angkor Server)"
+:log info "MineCraft Private Server"
 :log warning "Message Us for Game Request to be ported. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 }
