@@ -1,7 +1,7 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "4.25.2017 Revision 16b (HoneyBean)"
+:local scriptversion "5.2.2017 Revision 16c (HoneyBean)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
 :log warning "Updating League of Legends......";
 :if ([:len [/ip firewall mangle find where dst-port~"5100-5220" and new-connection-mark~"Games_LOLPH"]] > 0) do={
@@ -13,11 +13,8 @@ local LOLPORT 5100-5400;
 :log warning "League of Legends Game-Port already updated!"
 :delay 2;
 /system logging enable 0
-:log warning "Changelog: Added Games (OtherGames) (Revision 16b)"
-:log info "BullSF (New IPs)"
-:log info "Heroes Evolved (Mobile: Android & iOS) (Angkor Server)"
-:log info "Overwatch Asia Server"
-:log info "MineCraft Private Server"
+:log warning "Changelog: Added Games (OtherGames) (Revision 16c)"
+:log info "Overwatch Asia Server - Extended"
 :log warning "Message Us for Game Request to be ported. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 }
