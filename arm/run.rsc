@@ -16,8 +16,9 @@ local LOLPORT 5100-5400;
 :log warning "Changelog: Added Games (OtherGames) (Revision 18a)"
 :log info "WarThunder"
 :log info "Heroes and Generals"
-:log info "MineCraft MT1 and MT2"
-:log info "Tantra Sanity"
+:log info "MineCraft MT1 and MT2 (Private)"
+:log info "Tantra Sanity (Private)"
+:log info "Ran Online PH . Net (Private)"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 }
