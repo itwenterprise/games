@@ -19,6 +19,7 @@ local LOLPORT 5100-5400;
 :log info "MineCraft MT1 and MT2 (Private)"
 :log info "Tantra Sanity (Private)"
 :log info "Ran Online PH . Net (Private)"
+:log info "Mobile Legends (Android - iOS)"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 }
