@@ -49,6 +49,7 @@ add distance=1 dst-address=100.100.8.0/22 gateway=VITRO
 :delay 2;
 /system logging enable 0
 :log warning "Changelog: Added Games (OtherGames) (Revision 20c)"
+:log warning "Changelog: Updates"
 :log info "Ragnarok Philippines Loki Server: https://ragnarokonline.com.ph"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
