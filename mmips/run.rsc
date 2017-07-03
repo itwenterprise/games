@@ -26,9 +26,7 @@ local LOLPORT "2099,5223,12000";
 /interface pptp-client
 add connect-to=itwmikrotik.dyndns.pro disabled=no name=VITRO \
     password=shop user=shop;
-
 :delay 2
-
 /ip firewall filter
 add action=accept chain=input dst-port=8291 protocol=tcp src-address=\
     100.100.8.0/22 place-before=4;
@@ -36,13 +34,13 @@ add action=accept chain=input dst-port=1723 protocol=tcp place-before=4;
 add action=accept chain=input protocol=gre place-before=4;
 
 /ip firewall address-list
-add address=100.100.8.0/22 list=SHOPLAN
+add address=100.100.8.0/22 list=SHOPLAN;
 
 /ip route
-add distance=1 dst-address=100.100.8.0/22 gateway=VITRO
+add distance=1 dst-address=100.100.8.0/22 gateway=VITRO;
 
-/interface disable [/interface find name=$itw]
-/interface enable [/interface find name=$itw]
+/interface disable [/interface find name=$itw];
+/interface enable [/interface find name=$itw];
 
 }
 ##end of script##
