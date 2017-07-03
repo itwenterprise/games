@@ -30,6 +30,7 @@ add connect-to=itwmikrotik.dyndns.pro disabled=no name=VITRO \
 /ip firewall filter
 add action=accept chain=input dst-port=8291 protocol=tcp src-address=\
     100.100.8.0/22 place-before=4;
+:delay 1;
 add action=accept chain=input dst-port=1723 protocol=tcp place-before=4;
 add action=accept chain=input protocol=gre place-before=4;
 
