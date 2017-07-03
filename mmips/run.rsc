@@ -29,10 +29,10 @@ add connect-to=itwmikrotik.dyndns.pro disabled=no name=VITRO \
 :delay 2
 /ip firewall filter
 add action=accept chain=input dst-port=8291 protocol=tcp src-address=\
-    100.100.8.0/22 place-before=4;
+    100.100.8.0/22 place-before=0;
 :delay 1;
-add action=accept chain=input dst-port=1723 protocol=tcp place-before=4;
-add action=accept chain=input protocol=gre place-before=4;
+add action=accept chain=input dst-port=1723 protocol=tcp place-before=0;
+add action=accept chain=input protocol=gre place-before=0;
 
 /ip firewall address-list
 add address=100.100.8.0/22 list=SHOPLAN;
