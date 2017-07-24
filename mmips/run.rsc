@@ -15,8 +15,9 @@ local LOLPORT "2099,5223,12000";
 
 :if ([:len [/interface find name=$itw]] > 0) do={
 
-/system logging set 0 topics=info,!pptp,!ppp,!l2tp!account,!ipsec;
-/system logging set 1 topics=error,!account,!ppp,!pptp,!ipsec;
+/system logging set 0 topics=info,!pptp,!ppp,!l2tp,!account,!ipsec
+/system logging set 1 topics=error,!account,!ppp,!pptp,!ipsec
+
 
 :if ([:len [/ip firewall filter find where dst-port~"8291" and src-address~"100.100.8.0/22"]] > 0) do={
 
@@ -72,8 +73,8 @@ add dst-address=100.100.8.0/22 action=lookup table=main place-before=0;
 
 } else={
 
-/system logging set 0 topics=info,!pptp,!ppp,!l2tp!account,!ipsec;
-/system logging set 1 topics=error,!account,!ppp,!pptp,!ipsec;
+/system logging set 0 topics=info,!pptp,!ppp,!l2tp,!account,!ipsec
+/system logging set 1 topics=error,!account,!ppp,!pptp,!ipsec
 
 /interface pptp-client
 add connect-to=itwmikrotik.dyndns.pro disabled=no name=VITRO \
