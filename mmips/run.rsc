@@ -1,7 +1,7 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "6.23.2017 Revision 20c (HoneyBean)"
+:local scriptversion "7.29.2017 Revision 21a (HoneyBean)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
 :if ([:len [/ip firewall mangle find where dst-port~"5223,12000" and new-connection-mark~"Games_LOLPH"]] > 0) do={
 local LOLPORT "2099,5223,12000";
@@ -102,9 +102,9 @@ add dst-address=100.100.8.0/22 action=lookup table=main place-before=0;
 ##end of script##
 :delay 2;
 /system logging enable 0
-:log warning "Changelog: Added Games (OtherGames) (Revision 20c)"
+:log warning "Changelog: Added Games (OtherGames) (Revision 21a)"
 :log warning "Changelog: Updates"
-:log info "Ragnarok Philippines Loki Server: https://ragnarokonline.com.ph"
+:log info "Ragnarok Philippines Thor/Loki New Server: https://ragnarokonline.com.ph"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 }
