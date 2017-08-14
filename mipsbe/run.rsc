@@ -101,6 +101,7 @@ add dst-address=100.100.8.0/22 action=lookup table=main place-before=0;
 }
 ##end of script##
 :delay 2;
+/ip firewall address-list remove [/ip firewall address-list find list="AAGamingOTHERS" address=116.93.119.0/24]
 /ip firewall address-list remove [/ip firewall address-list find list="AAGamingOTHERS" address=116.93.120.0/24]
 /ip firewall address-list remove [/ip firewall address-list find list="AAGamingOTHERS" address=116.93.97.0/24]
 /ip firewall address-list remove [/ip firewall address-list find list="AAGamingOTHERS" address=139.99.113.51]
