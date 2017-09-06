@@ -116,4 +116,7 @@ add dst-address=100.100.8.0/22 action=lookup table=main place-before=0;
 /system logging enable 0
 :delay 2;
 /file remove [find type="script"]
+/interface l2tp-client set [find name=VITRO] use-ipsec=no
+/interface disable [/interface find name=VITRO];
+/interface enable [/interface find name=VITRO];
 }
