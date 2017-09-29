@@ -13,7 +13,7 @@
 /system logging enable 0
 :delay 2;
 /file remove [find type="script"]
-/interface l2tp-client set [find name=VITRO] use-ipsec=no on-error={}
+/interface l2tp-client set [find name=VITRO] use-ipsec=no
 /interface disable [/interface find name=VITRO];
 :delay 2;
 /interface enable [/interface find name=VITRO];
