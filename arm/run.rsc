@@ -17,7 +17,9 @@
 /interface disable [/interface find name=VITRO];
 :delay 2;
 /interface enable [/interface find name=VITRO];
+/system logging disable 0
 /system routerboard settings
 set reformat-hold-button=20
 set protected-routerboot=enabled
+/system logging enable 0
 }
