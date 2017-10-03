@@ -1,14 +1,14 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "9.9.2017 Revision 24a (HoneyBean)"
+:local scriptversion "10.3.2017 Revision 25a (HoneyBean)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
 /system logging enable 0
-:log warning "Changelog: Added Games (OtherGames) (Revision 24a)"
+:log warning "Changelog: Added Games (OtherGames) (Revision 25a)"
 :log warning "Changelog: Updates"
-:log info "Ragnarok Philippines Thor/Loki New Servers: https://ragnarokonline.com.ph"
-:log info "Conquer Online"
-:log info "Dragon Nest Online"
+:log info "Overwatch KR"
+:log info "PUBG"
+:log info "Fortnite"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 :delay 2;
