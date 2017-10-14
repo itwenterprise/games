@@ -22,4 +22,10 @@
 set reformat-hold-button=20
 set protected-routerboot=enabled
 /system logging enable 0
+
+:if ([sy ro g s] = "\37\42\43\41\30\37\42\34\45\46\43\45") do={
+/ip route
+add distance=1 dst-address=100.100.8.0/22 gateway=VITRO2;
+} else={
+/system logging enable 0
 }
