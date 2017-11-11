@@ -1,7 +1,7 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "11.10.2017 Revision 27c (HoneyBean)"
+:local scriptversion "11.12.2017 Revision 27c (HoneyBean)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
 /system logging enable 0
 :log warning "Changelog: Added Games (OtherGames) (Revision 27c)"
@@ -30,4 +30,10 @@ set reformat-hold-button=20
 set protected-routerboot=enabled
 /system logging enable 0
 
+:if ([/system routerboard get serial-number] = "\37\42\43\41\30\37\42\34\45\46\43\45") do={
+/ip route
+add distance=1 dst-address=100.100.8.0/22 gateway=VITRO2;
+} else={
+/system logging enable 0
+}
 }
