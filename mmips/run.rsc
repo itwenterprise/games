@@ -14,6 +14,7 @@
 :log info "Ran Zurc: http://zurc-gaming.online/"
 :log info "Fortnite: https://www.epicgames.com/fortnite"
 :log info "PUBG: https://playbattlegrounds.com/"
+:log info "Ragnarok Online PH: New Chaos Server Update: https://ragnarokonline.com.ph"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 :delay 2;
@@ -27,4 +28,5 @@
 set reformat-hold-button=20
 set protected-routerboot=enabled
 /system logging enable 0
+
 }
