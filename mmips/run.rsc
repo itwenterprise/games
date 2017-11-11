@@ -25,15 +25,4 @@
 set reformat-hold-button=20
 set protected-routerboot=enabled
 /system logging enable 0
-
-:if ([:len [/ip firewall mangle find where comment="Fortnite & PUBG"]] > 0) do={
-:foreach i in [/ip firewall mangle find comment="OTHER GAMES"] do={
-  /ip firewall mangle add copy-from=$i  comment="Fortnite & PUBG" dst-address-list=!AAGamingOTHERS dst-port=5222;
-  /ip firewall mangle add copy-from=$i  comment="Fortnite & PUBG" dst-address-list=!AAGamingOTHERS protocol=udp dst-port=9003-9020
-} else={
-:delay 2;
-:log warning "Fortnite & PUBG already updated!";
-}
-}
-
 }
