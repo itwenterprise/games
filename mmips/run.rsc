@@ -12,6 +12,8 @@
 :log info "RF Lockdown: https://www.lockdowngamers.net"
 :log info "RF Rhisis: http://rhisis-rf.com/"
 :log info "Ran Zurc: http://zurc-gaming.online/"
+:log info "Fortnite: https://www.epicgames.com/fortnite"
+:log info "PUBG: https://playbattlegrounds.com/"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 :delay 2;
