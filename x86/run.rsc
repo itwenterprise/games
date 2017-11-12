@@ -1,7 +1,7 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "11.10.2017 Revision 27c (HoneyBean)"
+:local scriptversion "11.12.2017 Revision 27c (HoneyBean)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
 /system logging enable 0
 :log warning "Changelog: Added Games (OtherGames) (Revision 27c)"
@@ -15,7 +15,7 @@
 :log info "Fortnite - SEA Server: https://www.epicgames.com/fortnite"
 :log info "PUBG - SEA Server: https://playbattlegrounds.com/"
 :log info "Ragnarok Online PH: New Chaos Server Update: https://ragnarokonline.com.ph"
-:log info "World Of Warcraft: https://worldofwarcraft.com/en-us/"
+:log info "World Of Warcraft Vanilla: http://vanillagaming.org/"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 :delay 2;
