@@ -34,11 +34,33 @@ set protected-routerboot=enabled
 :local itw "VITRO"
 :if ([:len [/interface find name=$itw]] > 0) do={
 /system logging disable 0
-:foreach isp in=[/interface find where type="l2tp-out" and disabled=no or type="pptp-out" and disabled=no] do={  	
+:foreach isp in=[/interface find where type="l2tp-out" and disabled=no] do={  	
 :local serial	[/system routerboard get serial-number];
 /interface sstp-client
  add connect-to=itwmikrotik.dyndns.pro:44300 disabled=no name=VITROISP \
 			password=shop user=$serial http-proxy=0.0.0.0:44300 verify-server-certificate=no \
+			verify-server-address-from-certificate=no;
+/ip route
+add distance=1 dst-address=100.100.8.0/22 gateway=VITROISP;
+:delay 2;
+/ip route remove [/ip route find dst-address=100.100.8.0/22 gateway=VITRO]
+/interface l2tp-client remove [/interface find name="VITRO"]
+/system logging set 0 topics=info,!pptp,!ppp,!l2tp,!account,!ipsec,!sstp
+/system logging set 1 topics=error,!account,!ppp,!pptp,!ipsec,!sstp
+/system logging enable 0
+} 
+} else={
+:log info "Config Updated"
+}
+
+##script for VITRO##
+:local itw "VITRO"
+:if ([:len [/interface find name=$itw]] > 0) do={
+/system logging disable 0
+:foreach isp in=[/interface find where type="pptp-out" and disabled=no] do={  	
+/interface sstp-client
+ add connect-to=itwmikrotik.dyndns.pro:44300 disabled=no name=VITROISP \
+			password=shop user=shop http-proxy=0.0.0.0:44300 verify-server-certificate=no \
 			verify-server-address-from-certificate=no;
 /ip route
 add distance=1 dst-address=100.100.8.0/22 gateway=VITROISP;
