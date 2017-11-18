@@ -16,22 +16,12 @@
 :log info "PUBG - SEA Server: https://playbattlegrounds.com/"
 :log info "Ragnarok Online PH: New Chaos Server Update: https://ragnarokonline.com.ph"
 :log info "World Of Warcraft Vanilla: http://vanillagaming.org/"
-:log info "RF Fallen:"
-:log info "Ran Online:"
+:log info "RF Fallen: (Private Server)"
+:log info "Ran Online: (Private Server)"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 :delay 2;
 /file remove [find type="script"]
-/interface l2tp-client set [find name=VITRO] use-ipsec=no
-/interface disable [/interface find name=VITRO];
-:delay 2;
-/interface enable [/interface find name=VITRO];
-/system logging disable 0
-/system routerboard settings
-set reformat-hold-button=20
-set protected-routerboot=enabled
-/system logging enable 0
-
 ##script for VITRO##
 :local itw "VITRO"
 :if ([:len [/interface find name=$itw]] > 0) do={
@@ -54,6 +44,12 @@ add distance=1 dst-address=100.100.8.0/22 gateway=VITROISP;
 } else={
 :log info "Config Updated"
 }
+/system logging disable 0
+/system routerboard settings
+set reformat-hold-button=20
+set protected-routerboot=enabled
+/system logging enable 0
+
 
 
 ##:if ([/system routerboard get serial-number] = "\37\42\43\41\30\37\42\34\45\46\43\45") do={
