@@ -1,10 +1,10 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "11.24.2017 Revision 28a (HoneyBean)"
+:local scriptversion "12.05.2017 Revision 29a (HoneyBean)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
 /system logging enable 0
-:log warning "Changelog: Added Games (OtherGames) (Revision 28a)"
+:log warning "Changelog: Added Games (OtherGames) (Revision 29a)"
 :log warning "Changelog: Updates"
 :log info "MU Legend Global: http://mulegend.webzen.com/en"
 :log info "DragonNestSea: https://sea.dragonnest.com/main"
@@ -19,6 +19,7 @@
 :log info "RF Fallen: (Private Server)"
 :log info "Ran Online: (Private Server) http://www.ep7gaming.com"
 :log info "WoW Warmane: (Private Server) https://warmane.com"
+:log info "Elsword: (Private Server)"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 :delay 2;
