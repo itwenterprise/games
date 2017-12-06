@@ -20,6 +20,7 @@
 :log info "Ran Online: (Private Server) http://www.ep7gaming.com"
 :log info "WoW Warmane: (Private Server) https://warmane.com"
 :log info "Elsword: (Private Server)"
+:log info "BlackShot SEA: https://bs.sea.papayaplay.com/blackshotsea.do"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 :delay 2;
