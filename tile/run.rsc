@@ -1,10 +1,10 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "12.06.2017 Revision 29b (HoneyBean)"
+:local scriptversion "12.12.2017 Revision 29c (HoneyBean)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
 /system logging enable 0
-:log warning "Changelog: Added Games (OtherGames) (Revision 29b)"
+:log warning "Changelog: Added Games (OtherGames) (Revision 29c)"
 :log warning "Changelog: Updates"
 :log info "MU Legend Global: http://mulegend.webzen.com/en"
 :log info "DragonNestSea: https://sea.dragonnest.com/main"
