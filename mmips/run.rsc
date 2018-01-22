@@ -22,6 +22,7 @@
 :log info "SF 1 Playpark: (Update)"
 :log info "Black Squad: (Steam Game)"
 :log info "Knives Out: (Battleroyal Game)"
+:log info "Codegeass RAN: http://codegeass-ran.com/"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 :delay 2;
