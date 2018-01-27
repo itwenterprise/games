@@ -1,21 +1,13 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "12.05.2017 Revision 29a (HoneyBean)"
+:local scriptversion "01.27.2018 Revision 2a (Oreo)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
 /system logging enable 0
-:log warning "Changelog: Added Games (OtherGames) (Revision 29a)"
+:log warning "Changelog: Added Games (OtherGames) (Revision 2a)"
 :log warning "Changelog: Updates"
-:log info "MU Legend Global: http://mulegend.webzen.com/en"
-:log info "DragonNestSea: https://sea.dragonnest.com/main"
-:log info "Echo Of Soul Phoenix: http://echoofsoulphoenix.aeriagames.com"
-:log info "RF Lockdown: https://www.lockdowngamers.net"
-:log info "RF Rhisis: http://rhisis-rf.com/"
-:log info "Ran Zurc: http://zurc-gaming.online/"
 :log info "Fortnite - SEA Server: https://www.epicgames.com/fortnite"
 :log info "PUBG - SEA Server: https://playbattlegrounds.com/"
-:log info "Ragnarok Online PH: New Chaos Server Update: https://ragnarokonline.com.ph"
-:log info "World Of Warcraft Vanilla: http://vanillagaming.org/"
 :log info "RF Fallen: (Private Server)"
 :log info "Ran Online: (Private Server) http://www.ep7gaming.com"
 :log info "WoW Warmane: (Private Server) https://warmane.com"
@@ -23,6 +15,7 @@
 :log info "Black Squad: (Steam Game)"
 :log info "Knives Out: (Battleroyal Game)"
 :log info "Codegeass RAN: http://codegeass-ran.com/"
+:log info "Rules of Survival: https://www.rulesofsurvivalgame.com/"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 :delay 2;
