@@ -1,22 +1,55 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "02.11.2018 Revision 3c (Oreo)"
+:local scriptversion "01.30.2018 Revision 2b (Oreo)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
 /system logging enable 0
-:log warning "Changelog: Added Games (OtherGames) (Revision 3c)"
+:log warning "Changelog: Added Games (OtherGames) (Revision 2b)"
 :log warning "Changelog: Updates"
 :log info "Fortnite - SEA Server: https://www.epicgames.com/fortnite"
 :log info "PUBG - SEA Server: https://playbattlegrounds.com/"
+:log info "RF Fallen: (Private Server)"
+:log info "Ran Online: (Private Server) http://www.ep7gaming.com"
+:log info "WoW Warmane: (Private Server) https://warmane.com"
 :log info "SF 1 Playpark: (Update)"
 :log info "Black Squad: (Steam Game)"
-:log info "Heroes of Newerth: (GARENA)"
-:log info "Rules of Survival: https://www.rulesofsurvivalgame.com/ (Added US Server)"
-:log info "Rules of Survival: https://www.rulesofsurvivalgame.com/ (Added New Servers ASIA)"
+:log info "Knives Out: (Battleroyal Game)"
+:log info "Codegeass RAN: http://codegeass-ran.com/"
+:log info "Rules of Survival: https://www.rulesofsurvivalgame.com/ (Update)"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 :delay 2;
 /file remove [find type="script"]
+:delay 2;
+/ip firewall address-list remove [find address=52.16.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=52.224.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=52.168.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=52.248.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=52.120.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=18.216.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=13.72.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=54.64.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=34.200.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=52.72.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=52.64.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=52.192.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=52.0.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=52.232.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=34.192.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=34.224.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=13.112.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=13.232.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=13.248.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=13.224.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=13.176.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=13.168.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=13.120.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=54.248.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=54.176.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=54.224.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=54.168.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=54.120.0.0/13 list=AAGamingOTHERS];
+:delay 2;
 ##script for VITRO##
 :local itw "VITRO"
 :if ([:len [/interface find name=$itw]] > 0) do={
