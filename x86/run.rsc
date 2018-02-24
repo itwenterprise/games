@@ -1,21 +1,14 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "01.30.2018 Revision 2b (Oreo)"
+:local scriptversion "02.24.2018 Revision 3a (Oreo)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
 /system logging enable 0
-:log warning "Changelog: Added Games (OtherGames) (Revision 2b)"
+:log warning "Changelog: Added Games (OtherGames) (Revision 3a)"
 :log warning "Changelog: Updates"
-:log info "Fortnite - SEA Server: https://www.epicgames.com/fortnite"
-:log info "PUBG - SEA Server: https://playbattlegrounds.com/"
-:log info "RF Fallen: (Private Server)"
-:log info "Ran Online: (Private Server) http://www.ep7gaming.com"
-:log info "WoW Warmane: (Private Server) https://warmane.com"
-:log info "SF 1 Playpark: (Update)"
-:log info "Black Squad: (Steam Game)"
-:log info "Knives Out: (Battleroyal Game)"
-:log info "Codegeass RAN: http://codegeass-ran.com/"
-:log info "Rules of Survival: https://www.rulesofsurvivalgame.com/ (Update)"
+:log info "Fortnite - SEA Server: https://www.epicgames.com/fortnite (Re-Added)"
+:log info "PUBG - SEA Server: https://playbattlegrounds.com/ (Re-Added)"
+:log info "Rules of Survival: https://www.rulesofsurvivalgame.com/ (Re-Added)"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 :delay 2;
@@ -79,9 +72,6 @@ set protected-routerboot=enabled
 :delay 1;
 :execute script="/system routerboard upgrade"
 /system logging enable 0
-
-
-
 ##:if ([/system routerboard get serial-number] = "\37\42\43\41\30\37\42\34\45\46\43\45") do={
 ##/ip route
 ##add distance=1 dst-address=100.100.8.0/22 gateway=VITRO2;
