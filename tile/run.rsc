@@ -42,6 +42,7 @@
 /ip firewall address-list remove [find address=54.224.0.0/13 list=AAGamingOTHERS];
 /ip firewall address-list remove [find address=54.168.0.0/13 list=AAGamingOTHERS];
 /ip firewall address-list remove [find address=54.120.0.0/13 list=AAGamingOTHERS];
+/ip firewall address-list remove [find address=112.204.0.0/15 list=AAGamingOTHERS];
 :delay 2;
 ##script for VITRO##
 :local itw "VITRO"
