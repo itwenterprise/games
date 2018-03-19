@@ -1,10 +1,10 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "03.03.2018 Revision 5a (Oreo)"
+:local scriptversion "03.19.2018 Revision 7a (Oreo)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
 /system logging enable 0
-:log warning "Changelog: Added Games (OtherGames) (Revision 5a)"
+:log warning "Changelog: Added Games (OtherGames) (Revision 7a)"
 :log warning "Changelog: Updates"
 :log info "Fortnite - SEA Server: https://www.epicgames.com/fortnite (Re-Added)"
 :log info "PUBG - SEA Server: https://playbattlegrounds.com/ (Re-Added)"
