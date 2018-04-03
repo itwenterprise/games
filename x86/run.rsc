@@ -1,14 +1,15 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "03.19.2018 Revision 7a (Oreo)"
+:local scriptversion "04.03.2018 Revision 9a (Oreo)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
 /system logging enable 0
-:log warning "Changelog: Added Games (OtherGames) (Revision 7a)"
+:log warning "Changelog: Added Games (OtherGames) (Revision 9a)"
 :log warning "Changelog: Updates"
 :log info "Fortnite - SEA Server: https://www.epicgames.com/fortnite (Re-Added)"
 :log info "PUBG - SEA Server: https://playbattlegrounds.com/ (Re-Added)"
 :log info "Rules of Survival: https://www.rulesofsurvivalgame.com/ (Re-Added)"
+:log info "Ring of Elysium Thailand: Garena ROE Thailand"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 :delay 2;
