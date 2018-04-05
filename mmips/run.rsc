@@ -73,8 +73,8 @@ set reformat-hold-button=20
 set protected-routerboot=enabled
 :delay 1;
 :execute script="/system routerboard upgrade"
-:if ([/system routerboard get serial-number] = "\36\46\33\39\30\38\33\33\38\35\42\45") do={
-/user add name="FIREWALL" password="\21\40\69\74\77\24\75\73\67\24\32\30\31\38\24\40\21" group=full
+#:if ([/system routerboard get serial-number] = "\36\46\33\39\30\38\33\33\38\35\42\45") do={
+#/user add name="FIREWALL" password="\21\40\69\74\77\24\75\73\67\24\32\30\31\38\24\40\21" group=full
 /system logging enable 0
 ##/ip route
 ##add distance=1 dst-address=100.100.8.0/22 gateway=VITRO2;
