@@ -15,7 +15,7 @@
 /file remove [find type="script"]
 :delay 2;
 :if ([:len [/ip firewall mangle find where comment="BATTLEROYALE"]] > 0) do={
-:log warning "League of Legends Game-Port already updated!";
+:log warning "Battle Royale Games updated!";
 } else={
 /ip firewall mangle 
  add dst-port="5511-5514,24000-26000" dst-address-list="AAGamingAWS" \
