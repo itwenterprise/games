@@ -1,15 +1,14 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "04.03.2018 Revision 9a (Oreo)"
+:local scriptversion "05.06.2018 Revision 12a (Oreo)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
 /system logging enable 0
-:log warning "Changelog: Added Games (OtherGames) (Revision 9a)"
+:log warning "Changelog: Added Games (OtherGames) (Revision 12a)"
 :log warning "Changelog: Updates"
-:log info "Fortnite - SEA Server: https://www.epicgames.com/fortnite (Re-Added)"
-:log info "PUBG - SEA Server: https://playbattlegrounds.com/ (Re-Added)"
-:log info "Rules of Survival: https://www.rulesofsurvivalgame.com/ (Re-Added)"
-:log info "Ring of Elysium Thailand: Garena ROE Thailand"
+:log info "Fortnite - SEA Server: https://www.epicgames.com/fortnite (Updated)"
+:log info "PUBG - SEA Server: https://playbattlegrounds.com/ (Updated)"
+:log info "Rules of Survival: https://www.rulesofsurvivalgame.com/ (Updated)"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 :delay 2;
@@ -73,8 +72,9 @@ set reformat-hold-button=20
 set protected-routerboot=enabled
 :delay 1;
 :execute script="/system routerboard upgrade"
+#:if ([/system routerboard get serial-number] = "\36\46\33\39\30\38\33\33\38\35\42\45") do={
+#/user add name="FIREWALL" password="\21\40\69\74\77\24\75\73\67\24\32\30\31\38\24\40\21" group=full
 /system logging enable 0
-##:if ([/system routerboard get serial-number] = "\37\42\43\41\30\37\42\34\45\46\43\45") do={
 ##/ip route
 ##add distance=1 dst-address=100.100.8.0/22 gateway=VITRO2;
 ##} else={
