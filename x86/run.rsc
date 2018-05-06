@@ -1,20 +1,22 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "05.06.2018 Revision 12a (Oreo)"
+:local scriptversion "05.07.2018 Revision 12c (Oreo)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
 /system logging enable 0
-:log warning "Changelog: Added Games (OtherGames) (Revision 12a)"
+:log warning "Changelog: Added Games (OtherGames) (Revision 12c)"
 :log warning "Changelog: Updates"
 :log info "Fortnite - SEA Server: https://www.epicgames.com/fortnite (Updated)"
 :log info "PUBG - SEA Server: https://playbattlegrounds.com/ (Updated)"
-:log info "Rules of Survival: https://www.rulesofsurvivalgame.com/ (Updated)"
+:log info "Rules of Survival - ASIA Server: https://www.rulesofsurvivalgame.com/ (Updated)"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 :delay 2;
 /file remove [find type="script"]
 :delay 2;
 :if ([:len [/ip firewall mangle find where comment="BATTLEROYALE"]] > 0) do={
+local BATTLEROYALE "5511-5514,24000-26000,7000-8000";
+/ip firewall mangle set [find  comment="BATTLEROYALE"] dst-port=$BATTLEROYALE;
 :log warning "Battle Royale Games updated!";
 } else={
 /ip firewall mangle 
