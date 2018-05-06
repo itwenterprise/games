@@ -14,35 +14,14 @@
 :delay 2;
 /file remove [find type="script"]
 :delay 2;
-/ip firewall address-list remove [find address=52.16.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=52.224.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=52.168.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=52.248.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=52.120.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=18.216.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=13.72.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=54.64.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=34.200.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=52.72.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=52.64.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=52.192.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=52.0.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=52.232.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=34.192.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=34.224.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=13.112.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=13.232.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=13.248.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=13.224.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=13.176.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=13.168.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=13.120.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=54.248.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=54.176.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=54.224.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=54.168.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=54.120.0.0/13 list=AAGamingOTHERS];
-/ip firewall address-list remove [find address=112.204.0.0/15 list=AAGamingOTHERS];
+:if ([:len [/ip firewall mangle find where comment="BATTLEROYALE"]] > 0) do={
+:log warning "Battle Royale Games not updated"
+} else={
+/ip firewall mangle
+add dst-port="5511-5514,24000-26000" dst-address-list="AAGamingAWS" \
+chain=prerouting connection-type=!ftp protocol=udp src-address-list="SHOPLAN" \
+layer7-protocol=!L7-Torrent action=mark-connection new-connection-mark=games-othergames \
+passthrough=yes comment="BATTLEROYALE" place-before=[find comment="OTHER GAMES"] }
 :delay 2;
 ##script for VITRO##
 :local itw "VITRO"
