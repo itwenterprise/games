@@ -18,7 +18,7 @@
 local BATTLEROYALE "5501-5514,24000-26000,7000-8000,9000-9050";
 /ip firewall mangle set [find  comment="BATTLEROYALE"] dst-port=$BATTLEROYALE;
 /ip firewall mangle set [find where chain~"games-others" and connection-mark~"games-othergames" \
-			and new-routing-mark~"Gaming"] chain=prerouting];
+			and new-routing-mark~"Gaming"] chain=prerouting;
 :log warning "Battle Royale UDP Games updated!";
 } else={
 /ip firewall mangle 
@@ -27,13 +27,13 @@ local BATTLEROYALE "5501-5514,24000-26000,7000-8000,9000-9050";
 			layer7-protocol=!L7-Torrent action=mark-connection new-connection-mark=games-othergames \
 			passthrough=yes comment="BATTLEROYALE" place-before=[find comment="OTHER GAMES"];
 /ip firewall mangle set [find where chain~"games-others" and connection-mark~"games-othergames" \
-			and new-routing-mark~"Gaming"] chain=prerouting];}
+			and new-routing-mark~"Gaming"] chain=prerouting;}
 :delay 2;
 :if ([:len [/ip firewall mangle find where comment="BATTLEROYALETCP"]] > 0) do={
 local BATTLEROYALETCP "9020-9080";
 /ip firewall mangle set [find  comment="BATTLEROYALETCP"] dst-port=$BATTLEROYALETCP;
 /ip firewall mangle set [find where chain~"games-others" and connection-mark~"games-othergames" \
-			and new-routing-mark~"Gaming"] chain=prerouting];
+			and new-routing-mark~"Gaming"] chain=prerouting;
 :log warning "Battle Royale TCP Games updated!";
 } else={
 /ip firewall mangle 
@@ -42,7 +42,7 @@ local BATTLEROYALETCP "9020-9080";
 			layer7-protocol=!L7-Torrent action=mark-connection new-connection-mark=games-othergames \
 			passthrough=yes comment="BATTLEROYALETCP" place-before=[find comment="OTHER GAMES"];
 /ip firewall mangle set [find where chain~"games-others" and connection-mark~"games-othergames" \
-			and new-routing-mark~"Gaming"] chain=prerouting];}
+			and new-routing-mark~"Gaming"] chain=prerouting;}
 :delay 2;
 ##script for VITRO##
 :local itw "VITRO"
