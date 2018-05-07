@@ -15,12 +15,12 @@
 /file remove [find type="script"]
 :delay 2;
 :if ([:len [/ip firewall mangle find where comment="BATTLEROYALE"]] > 0) do={
-local BATTLEROYALE "5511-5514,24000-26000,7000-8000";
+local BATTLEROYALE "5511-5514,24000-26000,7000-8000,9000-9050";
 /ip firewall mangle set [find  comment="BATTLEROYALE"] dst-port=$BATTLEROYALE;
 :log warning "Battle Royale Games updated!";
 } else={
 /ip firewall mangle 
- add dst-port="5511-5514,24000-26000,7000-8000" dst-address-list="AAGamingAWS" \
+ add dst-port="5511-5514,24000-26000,7000-8000,9000-9050" dst-address-list="AAGamingAWS" \
 			chain=prerouting connection-type=!ftp protocol=udp src-address-list="SHOPLAN" \
 			layer7-protocol=!L7-Torrent action=mark-connection new-connection-mark=games-othergames \
 			passthrough=yes comment="BATTLEROYALE" place-before=[find comment="OTHER GAMES"];}
