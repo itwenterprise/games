@@ -27,7 +27,7 @@ local BATTLEROYALE "5501-5514,24000-26000,7000-8000,9000-9050";
 :delay 2;
 :if ([:len [/ip firewall mangle find where comment="BATTLEROYALETCP"]] > 0) do={
 local BATTLEROYALETCP "9020-9080";
-/ip firewall mangle set [find  comment="BATTLEROYALE"] dst-port=$BATTLEROYALETCP;
+/ip firewall mangle set [find  comment="BATTLEROYALETCP"] dst-port=$BATTLEROYALETCP;
 :log warning "Battle Royale TCP Games updated!";
 } else={
 /ip firewall mangle 
