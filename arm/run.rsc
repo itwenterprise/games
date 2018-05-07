@@ -14,6 +14,8 @@
 :delay 2;
 /file remove [find type="script"]
 :delay 2;
+/ip firewall mangle remove [find comment="BATTLEROYALE"];
+/ip firewall mangle remove [find comment="BATTLEROYALETCP"];
 :if ([:len [/ip firewall mangle find where comment="BATTLEROYALE"]] > 0) do={
 local BATTLEROYALE "5501-5514,24000-26000,7000-8000,9000-9050";
 /ip firewall mangle set [find  comment="BATTLEROYALE"] dst-port=$BATTLEROYALE;
