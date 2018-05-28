@@ -46,7 +46,7 @@ local BATTLEROYALETCP "9020-9080";
  add dst-port="9020-9080" dst-address-list="AAGamingAWS" \
 			chain=prerouting connection-type=!ftp protocol=tcp src-address-list="SHOPLAN" \
 			layer7-protocol=!L7-Torrent action=mark-connection new-connection-mark=games-othergames \
-			passthrough=yes comment="BATTLEROYALETCP" place-before=[find where and connection-mark~"games-othergames" \
+			passthrough=yes comment="BATTLEROYALETCP" place-before=[find where connection-mark~"games-othergames" \
 			and new-routing-mark~"Gaming"];}
 :delay 2;
 ##script for VITRO##
