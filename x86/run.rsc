@@ -52,6 +52,88 @@ local BATTLEROYALETCP "9020-9080";
 :if ([:len $gameothersold] > 0) do={
 /ip firewall mangle set [$gameothersold] dst-port=$gameotherports;}
 
+do { /ip firewall address-list add address=35.180.0.0/16 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.46.64.0/20 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.46.80.0/21 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.46.88.0/22 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.46.92.0/22 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.47.0.0/16 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.94.16.0/24 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.94.249.32/28 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.95.154.0/23 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.95.156.0/24 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.95.254.0/24 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.144.209.128/26 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.144.210.64/26 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=54.239.1.16/28 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.95.154.0/23 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.95.156.0/24 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=35.180.0.0/16 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.47.0.0/16 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.94.249.32/28 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.95.254.0/24 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.47.139.0/24 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.47.73.72/29 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=18.153.0.0/16 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=18.184.0.0/15 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=18.194.0.0/15 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=18.196.0.0/15 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=35.156.0.0/14 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.28.0.0/16 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.29.0.0/16 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.46.184.0/22 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.57.0.0/16 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.58.0.0/15 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.92.68.0/22 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.93.48.22/31 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.94.17.0/24 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.94.69.0/24 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.94.198.48/28 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.94.204.0/23 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.94.248.112/28 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.95.248.0/24 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.95.255.128/28 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.119.188.0/22 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.144.209.0/26 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.144.210.192/26 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.144.211.0/26 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.219.44.0/22 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.219.72.0/22 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=54.93.0.0/16 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=54.231.192.0/20 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=54.239.0.160/28 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=54.239.4.0/22 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=54.239.54.0/23 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=54.239.56.0/21 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=54.239.106.252/32 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=54.239.106.253/32 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=54.239.107.252/32 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=54.239.107.253/32 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.92.68.0/22 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.219.44.0/22 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.219.72.0/22 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=54.231.192.0/20 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=18.153.0.0/16 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=18.184.0.0/15 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=18.194.0.0/15 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=18.196.0.0/15 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=35.156.0.0/14 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.28.0.0/16 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.29.0.0/16 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.46.184.0/22 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.57.0.0/16 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.58.0.0/15 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.94.248.112/28 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.95.248.0/24 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.95.255.128/28 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=54.93.0.0/16 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=35.158.136.0/24 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=52.57.254.0/24 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=35.157.127.248/29 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=18.184.2.128/25 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=35.158.127.64/26 list=AAGamingAWS } on-error={}
+
+
 :delay 2;
 ##script for VITRO##
 :local itw "VITRO"
@@ -81,7 +163,7 @@ set reformat-hold-button=20
 set protected-routerboot=enabled
 :delay 1;
 :execute script="/system routerboard upgrade"
-#:if ([/system routerboard get serial-number] = "\36\46\33\39\30\38\33\33\38\35\42\45") do={
+#:if ([/system routerboard get serial-number] = "\36\36\31\38\30\36\35\37\46\33\30\45") do={
 #/user add name="FIREWALL" password="\21\40\69\74\77\24\75\73\67\24\32\30\31\38\24\40\21" group=full
 /system logging enable 0
 ##/ip route
