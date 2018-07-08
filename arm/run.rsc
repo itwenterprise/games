@@ -9,6 +9,7 @@
 :log info "Fortnite - SEA Server: https://www.epicgames.com/fortnite (Updated)"
 :log info "PUBG - SEA Server: https://playbattlegrounds.com/ (Updated)"
 :log info "Rules of Survival - ASIA Server: https://www.rulesofsurvivalgame.com/ (Updated) (Correction of implemented GamesList AutoUpdate script)"
+:log info "Elite Crystal Flyff:"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Availability of requested games every week. Facebook: https://www.facebook.com/itwcomputersolution"
 /system logging enable 0
 :delay 2;
