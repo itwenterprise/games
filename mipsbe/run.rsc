@@ -19,12 +19,12 @@
 /ip firewall mangle remove [find comment="BATTLEROYALETCP"];
 
 :if ([:len [/ip firewall mangle find where comment="BATTLEROYALE"]] > 0) do={
-local BATTLEROYALE "24000-26000,7000-8000,9000-9050";
+local BATTLEROYALE "24000-26000,7000-8000,9000-9050,4010-4040";
 /ip firewall mangle set [find  comment="BATTLEROYALE"] dst-port=$BATTLEROYALE;
 :log warning "Battle Royale UDP Games updated!";
 } else={
 /ip firewall mangle 
- add dst-port="24000-26000,7000-8000,9000-9050" dst-address-list="AAGamingAWS" \
+ add dst-port="24000-26000,7000-8000,9000-9050,4010-4040" dst-address-list="AAGamingAWS" \
 			chain=prerouting connection-type=!ftp protocol=udp src-address-list="SHOPLAN" \
 			layer7-protocol=!L7-Torrent action=mark-connection new-connection-mark=games-othergames \
 			passthrough=yes comment="BATTLEROYALE" place-before=[find where connection-mark~"games-othergames" \
@@ -133,6 +133,8 @@ do { /ip firewall address-list add address=52.57.254.0/24 list=AAGamingAWS } on-
 do { /ip firewall address-list add address=35.157.127.248/29 list=AAGamingAWS } on-error={}
 do { /ip firewall address-list add address=18.184.2.128/25 list=AAGamingAWS } on-error={}
 do { /ip firewall address-list add address=35.158.127.64/26 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=18.208.0.0/13 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=18.232.0.0/14 list=AAGamingAWS } on-error={}
 
 
 :delay 2;
