@@ -37,7 +37,7 @@ do { /ip firewall address-list add address=128.1.73.192 list=AAGamingOTHERS } on
 /system routerboard settings
 set reformat-hold-button=20
 set protected-routerboot=enabled
-
+:delay 2;
    ## script messages ##
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
