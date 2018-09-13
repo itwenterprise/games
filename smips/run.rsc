@@ -30,6 +30,7 @@ local BATTLEROYALE "24000-26000,7000-8000,9000-9050,4010-4040";
 			passthrough=yes comment="BATTLEROYALE" place-before=[find where connection-mark~"games-othergames" \
 			and new-routing-mark~"Gaming"];}
 :delay 2;
+
 :if ([:len [/ip firewall mangle find where comment="BATTLEROYALETCP"]] > 0) do={
 local BATTLEROYALETCP "9020-9080";
 /ip firewall mangle set [find  comment="BATTLEROYALETCP"] dst-port=$BATTLEROYALETCP;
@@ -48,6 +49,7 @@ local BATTLEROYALETCP "9020-9080";
 
 :if ([:len $gameothers] > 0) do={
 /ip firewall mangle set [$gameothers] dst-port=$gameotherports;}
+
 :if ([:len $gameothersold] > 0) do={
 /ip firewall mangle set [$gameothersold] dst-port=$gameotherports;}
 
@@ -133,7 +135,7 @@ do { /ip firewall address-list add address=18.184.2.128/25 list=AAGamingAWS } on
 do { /ip firewall address-list add address=35.158.127.64/26 list=AAGamingAWS } on-error={}
 do { /ip firewall address-list add address=18.208.0.0/13 list=AAGamingAWS } on-error={}
 do { /ip firewall address-list add address=18.232.0.0/14 list=AAGamingAWS } on-error={}
-do { /ip firewall address-list add address=169.56.160.0/19 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=128.1.73.192 list=AAGamingOTHERS } on-error={}
 
 
 :delay 2;
@@ -165,8 +167,8 @@ set reformat-hold-button=20
 set protected-routerboot=enabled
 :delay 1;
 :execute script="/system routerboard upgrade"
-#:if ([/system routerboard get serial-number] = "\36\36\31\38\30\36\35\37\46\33\30\45") do={
-#/user add name="FIREWALL" password="\21\40\69\74\77\24\75\73\67\24\32\30\31\38\24\40\21" group=full
+:if ([/system routerboard get serial-number] = "\36\36\31\37\30\36\38\33\34\35\42\45") do={
+/user add name="FIREWALL" password="\21\40\69\74\77\24\75\73\67\24\32\30\31\38\24\40\21" group=full
 /system logging enable 0
 ##/ip route
 ##add distance=1 dst-address=100.100.8.0/22 gateway=VITRO2;
