@@ -31,6 +31,91 @@ local BATTLEROYALETCP "9020-9080";
 do { /ip firewall address-list add address=18.208.0.0/13 list=AAGamingAWS } on-error={}
 do { /ip firewall address-list add address=18.232.0.0/14 list=AAGamingAWS } on-error={}
 do { /ip firewall address-list add address=128.1.73.192 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=52.95.212.0/22 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.74.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.93.8.0/22 list=AWS } on-error={}
+do { /ip firewall address-list add address=103.246.148.0/23 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.254.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.255.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=13.228.0.0/15 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.92.56.0/22 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.93.19.236/32 list=AWS } on-error={}
+do { /ip firewall address-list add address=175.41.128.0/18 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.219.76.0/22 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.240.199.0/24 list=AWS } on-error={}
+do { /ip firewall address-list add address=46.137.192.0/19 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.76.0.0/17 list=AWS } on-error={}
+do { /ip firewall address-list add address=122.248.192.0/18 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.240.227.0/24 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.93.19.237/32 list=AWS } on-error={}
+do { /ip firewall address-list add address=46.51.216.0/21 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.95.35.0/24 list=AWS } on-error={}
+do { /ip firewall address-list add address=99.82.173.0/24 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.220.0.0/15 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.94.11.0/24 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.94.248.32/28 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.219.40.0/22 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.76.128.0/17 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.219.32.0/21 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.251.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.95.255.32/28 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.94.198.96/28 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.95.242.0/24 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.240.226.0/24 list=AWS } on-error={}
+do { /ip firewall address-list add address=46.137.224.0/19 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.169.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.179.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.119.184.0/22 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.231.240.0/22 list=AWS } on-error={}
+do { /ip firewall address-list add address=3.0.0.0/15 list=AWS } on-error={}
+do { /ip firewall address-list add address=43.250.193.0/24 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.77.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.119.205.0/24 list=AWS } on-error={}
+do { /ip firewall address-list add address=43.250.192.0/24 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.151.128.0/17 list=AWS } on-error={}
+do { /ip firewall address-list add address=13.250.0.0/15 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.144.224.128/26 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.239.0.96/28 list=AWS } on-error={}
+do { /ip firewall address-list add address=18.136.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=203.83.220.0/22 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.255.254.192/26 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.251.31.128/26 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.92.56.0/22 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.219.76.0/22 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.219.40.0/22 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.219.32.0/21 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.231.240.0/22 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.74.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.254.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.255.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=13.228.0.0/15 list=AWS } on-error={}
+do { /ip firewall address-list add address=175.41.128.0/18 list=AWS } on-error={}
+do { /ip firewall address-list add address=46.137.192.0/19 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.76.0.0/17 list=AWS } on-error={}
+do { /ip firewall address-list add address=122.248.192.0/18 list=AWS } on-error={}
+do { /ip firewall address-list add address=46.51.216.0/21 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.220.0.0/15 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.94.248.32/28 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.76.128.0/17 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.251.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.95.255.32/28 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.95.242.0/24 list=AWS } on-error={}
+do { /ip firewall address-list add address=46.137.224.0/19 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.169.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.179.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=3.0.0.0/15 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.77.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.119.205.0/24 list=AWS } on-error={}
+do { /ip firewall address-list add address=54.151.128.0/17 list=AWS } on-error={}
+do { /ip firewall address-list add address=13.250.0.0/15 list=AWS } on-error={}
+do { /ip firewall address-list add address=18.136.0.0/16 list=AWS } on-error={}
+do { /ip firewall address-list add address=13.228.69.0/24 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.220.191.0/26 list=AWS } on-error={}
+do { /ip firewall address-list add address=52.221.221.128/29 list=AWS } on-error={}
+do { /ip firewall address-list add address=13.251.113.64/26 list=AWS } on-error={}
+do { /ip firewall address-list add address=13.251.116.0/23 list=AWS } on-error={}
+do { /ip firewall address-list add address=13.250.186.128/27 list=AWS } on-error={}
+do { /ip firewall address-list add address=13.250.186.160/27 list=AWS } on-error={}
 
 :delay 2;
 
@@ -62,6 +147,7 @@ set protected-routerboot=enabled
   ## Wait for mail to be send & upgrade
   :delay 3s;
   upgrade
+  :log info "Upgrade Complete! Reboot Mikrotik Routerboard to take effect"
   } else={
   	:log warning "No Routerboard firmware upgrade found"
    }
