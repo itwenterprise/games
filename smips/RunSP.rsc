@@ -2,12 +2,12 @@
 :delay 2;
 
 :if ([:len [/ip firewall mangle find where comment="BATTLEROYALE"]] > 0) do={
-local BATTLEROYALE "24000-26000,7000-8000,9000-9050,9151,4010-4040";
+local BATTLEROYALE "24000-26000,7000-8000,9000-9080,9151,4010-4040";
 /ip firewall mangle set [find  comment="BATTLEROYALE"] dst-port=$BATTLEROYALE;
 :log warning "Battle Royale UDP Games updated!";
 } else={
 /ip firewall mangle 
- add dst-port="24000-26000,7000-8000,9000-9050.9151,4010-4040" dst-address-list="AAGamingAWS" \
+ add dst-port="24000-26000,7000-8000,9000-9080.9151,4010-4040" dst-address-list="AAGamingAWS" \
 			chain=prerouting connection-type=!ftp protocol=udp src-address-list="SHOPLAN" \
 			layer7-protocol=!L7-Torrent action=mark-connection new-connection-mark=games-othergames \
 			passthrough=yes comment="BATTLEROYALE" place-before=[find where connection-mark~"games-othergames" \
@@ -116,6 +116,7 @@ do { /ip firewall address-list add address=13.251.113.64/26 list=AAGamingAWS } o
 do { /ip firewall address-list add address=13.251.116.0/23 list=AAGamingAWS } on-error={}
 do { /ip firewall address-list add address=13.250.186.128/27 list=AAGamingAWS } on-error={}
 do { /ip firewall address-list add address=13.250.186.160/27 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=92.223.52.0/24 list=AAGamingOTHERS } on-error={}
 
 :delay 2;
 
@@ -136,6 +137,7 @@ set protected-routerboot=enabled
 :log info "Rules of Survival - ASIA Server: https://www.rulesofsurvivalgame.com/ (Updated)"
 :log info "Elite Crystal Flyff:"
 :log info "DragonNest Mobile:"
+:log info "World of Tanks ASIA:"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Facebook: https://www.facebook.com/itwcomputersolution"
 
 ## RouterOS latest, checking for firmware updates
