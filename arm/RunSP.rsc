@@ -128,16 +128,16 @@ set protected-routerboot=enabled
    ## script messages ##
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
-:local scriptversion "09.06.2018 Revision 18 (Oreo)"
+:local scriptversion "09.26.2018 Revision 20 (Oreo)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
-:log warning "Changelog: Added Games (OtherGames) (Revision 18)"
+:log warning "Changelog: Added Games (OtherGames) (Revision 20)"
 :log warning "Changelog: Updates"
 :log info "Fortnite - SEA Server: https://www.epicgames.com/fortnite (Updated)"
 :log info "PUBG - SEA Server: https://playbattlegrounds.com/ (Updated)"
 :log info "Rules of Survival - ASIA Server: https://www.rulesofsurvivalgame.com/ (Updated)"
 :log info "Elite Crystal Flyff:"
 :log info "DragonNest Mobile:"
-:log info "World of Tanks ASIA:"
+:log info "World of Tanks ASIA: (Updated)"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Facebook: https://www.facebook.com/itwcomputersolution"
 
 ## RouterOS latest, checking for firmware updates
