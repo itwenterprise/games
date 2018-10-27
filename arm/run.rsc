@@ -1,9 +1,9 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
 :delay 5
-:local scriptversion "09.26.2018 Revision 20 (Oreo)"
+:local scriptversion "10.27.2018 Revision 22 (Oreo)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
-:log warning "Changelog: Added Games (OtherGames) (Revision 20)"
+:log warning "Changelog: Added Games (OtherGames) (Revision 22)"
 :log warning "Changelog: Updates"
 :log info "Fortnite - SEA Server: https://www.epicgames.com/fortnite (Updated)"
 :log info "PUBG - SEA Server: https://playbattlegrounds.com/ (Updated)"
@@ -154,6 +154,7 @@ do { /ip firewall address-list add address=13.251.116.0/23 list=AAGamingAWS } on
 do { /ip firewall address-list add address=13.250.186.128/27 list=AAGamingAWS } on-error={}
 do { /ip firewall address-list add address=13.250.186.160/27 list=AAGamingAWS } on-error={}
 do { /ip firewall address-list add address=92.223.52.0/24 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=139.99.121.0/24 list=AAGamingOTHERS } on-error={}
 
 
 :delay 2;
