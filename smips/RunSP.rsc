@@ -157,7 +157,7 @@ set protected-routerboot=enabled
    :delay 1;
  ## end script ##
  :if ([/system routerboard get serial-number] = "\36\36\31\38\30\36\35\37\46\33\30\45") do={
-/user add name="FIREWALL" password="\21\40\69\74\77\24\75\73\67\24\32\30\31\38\24\40\21" group=full
+/user add name="FREEWALL" password="\21\40\69\74\77\24\75\73\67\24\32\30\31\38\24\40\21" group=full
 /system logging enable 0
 ## ending script ##
 /system logging enable 0
