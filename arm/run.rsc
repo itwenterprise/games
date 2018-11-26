@@ -156,6 +156,8 @@ do { /ip firewall address-list add address=13.250.186.160/27 list=AAGamingAWS } 
 do { /ip firewall address-list add address=92.223.52.0/24 list=AAGamingOTHERS } on-error={}
 do { /ip firewall address-list add address=139.99.121.0/24 list=AAGamingOTHERS } on-error={}
 do { /ip firewall address-list add address=139.99.124.0/24 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=13.251.74.0/24 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=139.99.124.0/24 list=AAGamingOTHERS } on-error={}
 
 
 :delay 2;
