@@ -20,7 +20,7 @@
 /ip firewall mangle remove [find comment="BATTLEROYALETCP"];
 
 :if ([:len [/ip firewall mangle find where comment="BATTLEROYALE"]] > 0) do={
-local BATTLEROYALE "24000-26000,7000-8000,9000-9080,9151,4010-4040";
+local BATTLEROYALE "24000-26000,7000-8000,9000-9080,9151,4010-4040,5502";
 /ip firewall mangle set [find  comment="BATTLEROYALE"] dst-port=$BATTLEROYALE;
 :log warning "Battle Royale UDP Games updated!";
 } else={
@@ -33,7 +33,7 @@ local BATTLEROYALE "24000-26000,7000-8000,9000-9080,9151,4010-4040";
 :delay 2;
 
 :if ([:len [/ip firewall mangle find where comment="BATTLEROYALETCP"]] > 0) do={
-local BATTLEROYALETCP "9020-9080";
+local BATTLEROYALETCP "9020-9080,5502";
 /ip firewall mangle set [find  comment="BATTLEROYALETCP"] dst-port=$BATTLEROYALETCP;
 :log warning "Battle Royale TCP Games updated!";
 } else={
@@ -158,6 +158,9 @@ do { /ip firewall address-list add address=139.99.121.0/24 list=AAGamingOTHERS }
 do { /ip firewall address-list add address=139.99.124.0/24 list=AAGamingOTHERS } on-error={}
 do { /ip firewall address-list add address=13.251.74.0/24 list=AAGamingOTHERS } on-error={}
 do { /ip firewall address-list add address=139.99.124.0/24 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=74.201.107.0/24 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=45.43.33.0/24 list=AAGamingAWS } on-error={}
+do { /ip firewall address-list add address=45.43.33.0/24 list=AAGamingOTHERS } on-error={}
 
 
 :delay 2;
