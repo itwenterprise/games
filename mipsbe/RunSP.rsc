@@ -28,7 +28,7 @@ local BATTLEROYALETCP "9020-9080,5502";
 
 :local gameothers [/ip firewall mangle find where dst-port~"1000-5937,5939-65535" and dst-address-list~"AAGamingOTHERS" and protocol~"udp"];
 :local gameothersold [/ip firewall mangle find where dst-port~"1000-5499,5520-5937,5939-65535" and dst-address-list~"AAGamingOTHERS" and protocol~"udp"];
-:local gameotherports "1000-5499,5501-5505,5520-5937,5939-65535"
+:local gameotherports "1000-5499,5501-5511,5520-5937,5939-65535"
 
 :if ([:len $gameothers] > 0) do={
 /ip firewall mangle set [$gameothers] dst-port=$gameotherports;}
