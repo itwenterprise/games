@@ -36,7 +36,6 @@ local BATTLEROYALETCP "9020-9080,5502";
 :if ([:len $gameothersold] > 0) do={
 /ip firewall mangle set [$gameothersold] dst-port=$gameotherports;}
 
-{
 
 do { /ip firewall address-list add address=18.208.0.0/13 list=AAGamingAWS } on-error={}
 do { /ip firewall address-list add address=18.232.0.0/14 list=AAGamingAWS } on-error={}
