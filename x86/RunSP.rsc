@@ -26,7 +26,16 @@ local BATTLEROYALETCP "9020-9080,5502";
 			passthrough=yes comment="BATTLEROYALETCP" place-before=[find where connection-mark~"games-othergames" \
 			and new-routing-mark~"Gaming"];}
 
-{
+:local gameothers [/ip firewall mangle find where dst-port~"1000-5937,5939-65535" and dst-address-list~"AAGamingOTHERS" and protocol~"udp"];
+:local gameothersold [/ip firewall mangle find where dst-port~"1000-5499,5520-5937,5939-65535" and dst-address-list~"AAGamingOTHERS" and protocol~"udp"];
+:local gameotherports "1000-5499,5501-5511,5520-5937,5939-65535"
+
+:if ([:len $gameothers] > 0) do={
+/ip firewall mangle set [$gameothers] dst-port=$gameotherports;}
+
+:if ([:len $gameothersold] > 0) do={
+/ip firewall mangle set [$gameothersold] dst-port=$gameotherports;}
+
 
 do { /ip firewall address-list add address=18.208.0.0/13 list=AAGamingAWS } on-error={}
 do { /ip firewall address-list add address=18.232.0.0/14 list=AAGamingAWS } on-error={}
