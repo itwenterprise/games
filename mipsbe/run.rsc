@@ -166,6 +166,11 @@ do { /ip firewall address-list add address=103.193.127.0/24 list=AAGamingOTHERS 
 do { /ip firewall address-list add address=119.28.70.0/23 list=AAGamingOTHERS } on-error={}
 do { /ip firewall address-list add address=45.43.50.0/24 list=AAGamingOTHERS } on-error={}
 do { /ip firewall address-list add address=45.40.221.0/24 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=45.43.34.0/24 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=35.184.0.0/14 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=35.224.0.0/13 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=35.192.0.0/13 list=AAGamingOTHERS } on-error={}
+
 
 
 :delay 2;
@@ -198,9 +203,5 @@ set protected-routerboot=enabled
 :delay 1;
 :execute script="/system routerboard upgrade"
 /system logging enable 0
-##/ip route
-##add distance=1 dst-address=100.100.8.0/22 gateway=VITRO2;
-##} else={
-##/system logging enable 0
-##}
+:delay 1;
 }
