@@ -172,6 +172,7 @@ do { /ip firewall address-list add address=35.224.0.0/13 list=AAGamingOTHERS } o
 do { /ip firewall address-list add address=35.192.0.0/13 list=AAGamingOTHERS } on-error={}
 do { /ip firewall address-list add address=103.97.51.0/24 list=AAGamingOTHERS } on-error={}
 do { /ip firewall address-list add address=52.161.106.0/24 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=185.70.85.0/24 list=AAGamingOTHERS } on-error={}
 
 
 
