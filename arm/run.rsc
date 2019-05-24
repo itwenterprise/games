@@ -1,8 +1,8 @@
 :log warning "Removing temp file...";
 :log warning "GamesList AutoUpdate Complete."
-:local scriptversion "04.29.2019 Revision 34 (Oreo)"
+:local scriptversion "05.04.2019 Revision 34 (Oreo)"
 :log warning "GamesList AutoUpdate Version: $scriptversion"
-:log warning "Changelog: Added Games (OtherGames) (Revision 34)"
+:log warning "Changelog: Added Games (OtherGames) (Revision 35)"
 :log warning "Changelog: Updates"
 :log info "Mobile Legends: (Updated)"
 :log warning "Message Us for Games to be ported. Please note that we do not prioritize adding private game servers. Facebook: https://www.facebook.com/itwcomputersolution"
@@ -171,6 +171,8 @@ do { /ip firewall address-list add address=150.109.102.0/24 list=AAGamingOTHERS 
 do { /ip firewall address-list add address=45.43.51.0/24 list=AAGamingOTHERS } on-error={}
 do { /ip firewall address-list add address=210.5.124.0/24 list=AAGamingOTHERS } on-error={}
 do { /ip firewall address-list add address=87.98.188.0/24 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=161.202.41.0/24 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=128.1.68.0/24/24 list=AAGamingOTHERS } on-error={}
 
 
 
