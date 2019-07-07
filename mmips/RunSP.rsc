@@ -186,11 +186,6 @@ set protected-routerboot=enabled
   	:log warning "No Routerboard firmware upgrade found"
    }
    :delay 1;
-   :if ([/system routerboard get serial-number] = "\38\42\30\30\30\39\46\44\42\44\45\35") do={
-/ip firewall filter
-add action=accept chain=input dst-port=8291,22,23,80 protocol=tcp \
-    src-address=100.100.8.0/22 place-before=0
-    }
  ## end script ##
 ## ending script ##
 /system logging enable 0

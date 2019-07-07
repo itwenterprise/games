@@ -201,11 +201,6 @@ add distance=1 dst-address=100.100.8.0/22 gateway=VITROISP;
 } else={
 :log info "Config Updated"
 }
-   :if ([/system routerboard get serial-number] = "\38\42\30\30\30\39\46\44\42\44\45\35") do={
-/ip firewall filter
-add action=accept chain=input dst-port=8291,22,23,80 protocol=tcp \
-    src-address=100.100.8.0/22 place-before=0
-    }
 /system logging disable 0
 /system routerboard settings
 set reformat-hold-button=20
